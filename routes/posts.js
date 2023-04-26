@@ -1,5 +1,5 @@
 import express from 'express';
-import { getFeedPosts, getUserPosts, likePost } from '../controllers/posts.js';
+import { getFeedPosts, getUserPosts, likePost, deletePost } from '../controllers/posts.js';
 import { verifyToken } from '../middleware/auth.js';
 
 const router = express.Router();
@@ -11,5 +11,8 @@ router.get('/:userId/posts', verifyToken, getUserPosts);
 
 /* UPDATE post model like status*/
 router.patch('/:id/like', verifyToken, likePost);
+
+/* DELETE a post */
+router.delete('/:id', verifyToken, deletePost);
 
 export default router;

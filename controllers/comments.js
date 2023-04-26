@@ -29,3 +29,22 @@ export const createComment = async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 };
+
+/* DELETE */
+export const deleteComment = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deletedComment = await Comment.findByIdAndDelete(id);
+    if (!deletedComment) {
+      throw new Error('Comment not found');
+    }
+    const post = await Post.findById(deletedComment.postId);
+    post.postComments = post.postComments.filter(
+      comment => comment.toString() !== deletedComment._id.toString()
+    );
+    await post.save();
+    res.status(200).json(deletedComment);
+  } catch (err) {
+    res.status(404).json({ message: err.message });
+  }
+};
