@@ -12,7 +12,7 @@ import authRoutes from './routes/auth.js';
 import userRoutes from './routes/users.js';
 import postRoutes from './routes/posts.js';
 import { register } from './controllers/auth.js';
-import { createPost } from './controllers/posts.js';
+import { createPost, updatePost } from './controllers/posts.js';
 import { createComment } from './controllers/comments.js';
 import { verifyToken } from './middleware/auth.js';
 import User from './models/User.js';
@@ -49,6 +49,8 @@ const upload = multer({ storage });
 app.post('/auth/register', upload.single('picture'), register);
 /** Create POST */
 app.post('/posts', verifyToken, upload.single('picture'), createPost);
+app.put('/posts/:id', verifyToken, upload.single('picture'), updatePost);
+
 app.post('/comment', verifyToken, createComment);
 
 /* ROUTES */

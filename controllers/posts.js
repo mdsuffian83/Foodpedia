@@ -49,6 +49,28 @@ export const getUserPosts = async (req, res) => {
 };
 
 /* UPDATE */
+export const updatePost = async (req, res) => {
+  try {
+    const body = req.body;
+    const { id } = req.params;
+    const post = await Post.findById(id);
+
+    if (body.description) {
+      post.description = body.description;
+    }
+    if (body.picturePath) {
+      post.picturePath = body.picturePath;
+    }
+    const updatedPost = await Post.findByIdAndUpdate(
+      id,
+      { picturePath: post.picturePath, description: post.description },
+      { new: true }
+    ).populate('postComments');
+    res.status(200).json(updatedPost);
+  } catch (err) {
+    res.status(404).json({ message: err.message });
+  }
+};
 export const likePost = async (req, res) => {
   try {
     const { id } = req.params;
@@ -66,7 +88,7 @@ export const likePost = async (req, res) => {
       id,
       { likes: post.likes },
       { new: true }
-    );
+    ).populate('postComments');
 
     res.status(200).json(updatedPost);
   } catch (err) {
