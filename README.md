@@ -88,11 +88,11 @@ Verify that the application runs successfully on the Vercel platform.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-MongoDB - Database
-Express - Server Framework
-React - Frontend Framework
-NodeJs - Server Environment
-Material-UI - UI Component Library
+- MongoDB - Database
+- Express - Server Framework
+- React - Frontend Framework
+- NodeJs - Server Environment
+- Material-UI - UI Component Library
 
 ## ✍️ Authors <a name = "authors"></a>
 
