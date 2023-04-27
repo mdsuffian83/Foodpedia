@@ -72,9 +72,9 @@ Use the navigation links to switch between different pages and features of the a
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
-To deploy the application, follow these steps:
+Planning to deploy the application, follow these steps:
 
-- Ensure that you have met all the prerequisites mentioned above.
+Ensure that you have met all the prerequisites mentioned above.
 Set up your production environment, such as a VPS or a hosting platform that supports Node.js.
 Configure your production environment with the required environment variables (e.g., database connection details).
 Transfer the application files to the server and run npm install to install dependencies.
