@@ -50,15 +50,15 @@ You need to have the following software installed on your system:
 
 ### Installing
 
-1. Clone the repository
+Open the terminal on your local machine.
 
-2. Navigate to the project directory
+Navigate to the directory where the food review app is located.
 
-3. Install the dependencies
+Run the command npm install to install all the dependencies listed in the package.json file.
 
-4. Start the development server
+After the installation is complete, run the command npm start to start the development server.
 
-The application should now be running at `http://localhost:3000`.
+The application should now be running at http://localhost:3000. Open your web browser and go to this URL to access the application.
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
