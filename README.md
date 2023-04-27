@@ -25,17 +25,15 @@ A food review app is a web or mobile application that allows users to search for
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
-This project is a web application for managing soccer players and their performance. Users can create, update, and view player profiles, which include information such as name, position, team, and performance.
+This project is a web application for reviewing restaurants and their offerings. Users can create, update, and view restaurant profiles, which include information such as name, cuisine, location, and ratings. Users can also leave reviews for restaurants, rating them on criteria such as food quality, service, ambiance, and overall experience. The application helps users make informed decisions about where to eat and provides feedback to restaurant owners to improve their offerings.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -47,7 +45,7 @@ You need to have the following software installed on your system:
 
 - MERN
 - MUI 
-- 
+- GITHUB
 
 
 ### Installing
@@ -68,28 +66,24 @@ Currently, there are no tests for this project. If you plan to add tests, explai
 
 ## 🎈 Usage <a name="usage"></a>
 
-- Visit the main page to view all players.
-- Click on "New Player" to create a new player account.
-- To update a player's profile, click on the "Update" button next to their name.
-- Use the navigation links to switch between different pages and features of the application.
+Non-registered users can view restaurant profiles and reviews but cannot edit or delete them. They can click the "Like" button on reviews.
+Registered users can create new restaurant profiles, leave reviews, and edit or delete their own reviews. They can also upload images of the food.
+Use the navigation links to switch between different pages and features of the application, such as browsing through the list of restaurants and their associated reviews.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
 To deploy the application, follow these steps:
 
 - Ensure that you have met all the prerequisites mentioned above.
-- Set up your production environment, such as a VPS or a hosting platform that supports Node.js.
-- Configure your production environment with the required environment variables (e.g., database connection details).
-- Transfer the application files to the server and run npm install to install dependencies.
-- Start the application using a process manager, like PM2 or forever.
-- Alternatively, you can also deploy the application using a cloud platform like Heroku. To deploy the application on Heroku, follow these steps:
-
-- Create a new app on Heroku and connect it to your GitHub repository.
-- Configure the required environment variables on Heroku.
-- Enable automatic deploys from your GitHub repository.
-- Deploy the application manually or wait for the automatic deploy to run.
-- You can see a live of the application deployed on a cloud platform at 
-
+Set up your production environment, such as a VPS or a hosting platform that supports Node.js.
+Configure your production environment with the required environment variables (e.g., database connection details).
+Transfer the application files to the server and run npm install to install dependencies.
+Verify that the application runs successfully in the development environment.
+Create an account on Vercel and create a new project.
+Connect your GitHub repository to Vercel.
+Configure the required environment variables in Vercel.
+Deploy the application manually or wait for the automatic deploy to run.
+Verify that the application runs successfully on the Vercel platform.
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
@@ -102,7 +96,7 @@ Material-UI - UI Component Library
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [Suffian](https://github.com/mdsuffian83/GA-Project-2-Player-Management) - Idea & Initial work
+- [Suffian](https://github.com/mdsuffian83/Foodpedia) - Idea & Initial work
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
