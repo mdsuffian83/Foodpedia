@@ -17,7 +17,7 @@
 ---
 
 <p align="center">
-  A web application to manage a soccer team's players and training sessions.
+A food review app is a web or mobile application that allows users to search for restaurants, read reviews, and leave their own reviews for restaurants they have visited. 
   <br>
 </p>
 
